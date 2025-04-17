@@ -1,0 +1,61 @@
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Node.js
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+
+# macOS
+*.AppleDouble
+.LSOverride
+
+# Windows
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# IDEs
+.idea/
+.vscode/
+*.suo
+*.user
+*.userosfile
+*.sln
+
+# Logs
+*.log
+
+# Environment files
+.env
+.env.*
+
+# Build output
+/dist
+/build
+/out
+*.exe
+*.dll
+*.obj
+*.o
+*.so
+*.dmg
+
+# Misc
+*.bak
+*.swp
+*.tmp
+
+# Coverage
+coverage/
+*.lcov
+
+# Npm packages
+package-lock.json
+yarn.lock
