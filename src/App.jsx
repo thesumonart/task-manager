@@ -7,6 +7,7 @@ import { IoCheckmarkCircle } from "react-icons/io5";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
+import { toast } from "sonner";
 
 import {
   AlertDialog,
@@ -73,10 +74,12 @@ const App = () => {
     if (taskInputText.trim() === "") return;
     setTaskList((prevTasks) => [...prevTasks, newTask]);
     resetTaskInputText();
+    toast.info("New task created.");
   };
 
   const handleDelete = (id) => {
     setTaskList((prevTasks) => prevTasks.filter((task) => task.id !== id));
+    toast.error("Task deleted successfully.");
   };
 
   const toggleCompleted = (id) => {
@@ -109,6 +112,7 @@ const App = () => {
     setIsEditModalOpen(false);
     setEditingTaskId(null);
     setEditingText("");
+    toast.success("Task updated successfully.");
   };
 
   const handleCancelEdit = () => {
